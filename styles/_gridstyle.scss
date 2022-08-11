@@ -1,0 +1,15 @@
+.board{
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    margin: 0;
+    padding:0;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px;
+    .black{
+        background-color: rgba(43, 128, 50, 0.601);
+    }
+
+}
+
+
+

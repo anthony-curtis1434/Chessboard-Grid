@@ -1,0 +1,20 @@
+.container{
+    height: 100%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+.board{
+    display: grid;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    justify-content: center;
+    margin-top: 0;
+    width: 100%;
+    background-image: url(/assets/wood3.jpg);
+    border: 10px solid;
+    border-image: url(/assets/wood3.jpg);
+    .box:nth-child(n+17){
+        color: white;
+    }
+}

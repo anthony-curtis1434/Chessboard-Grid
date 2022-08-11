@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-image: linear-gradient(rgba(60, 44, 205, 0.734), transparent);
+  background-repeat: no-repeat;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
+.board {
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 3;
+  justify-content: center;
+  margin-top: 0;
+  width: 100%;
+  background-image: url(/assets/wood3.jpg);
+  border: 10px solid;
+  -o-border-image: url(/assets/wood3.jpg);
+     border-image: url(/assets/wood3.jpg);
+}
+.board .box:nth-child(n+17) {
+  color: white;
+}
+
+.board {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-shadow: 0px 0px 10px 0px;
+}
+.board .black {
+  background-color: rgba(43, 128, 50, 0.601);
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  padding-bottom: 0;
+  margin: 0;
+  margin-top: 0;
+  min-height: 75px;
+  max-height: 55px;
+  min-width: 75px;
+  padding: 0;
+}
+
+.pawn {
+  -webkit-animation: top 1s ease-in-out forwards 2s;
+          animation: top 1s ease-in-out forwards 2s;
+}
+
+.pawnb1 {
+  -webkit-animation: bottom1 1s ease-in-out forwards 3s;
+          animation: bottom1 1s ease-in-out forwards 3s;
+}
+
+.bishop {
+  -webkit-animation: top-left 1s ease-in-out forwards 4s;
+          animation: top-left 1s ease-in-out forwards 4s;
+}
+
+.pawnb2 {
+  -webkit-animation: bottom2 1s ease-in-out forwards 5s;
+          animation: bottom2 1s ease-in-out forwards 5s;
+}
+
+.queen {
+  -webkit-animation: top-right 1s ease-in-out forwards 6s;
+          animation: top-right 1s ease-in-out forwards 6s;
+}
+
+.pawnb3 {
+  -webkit-animation: bottom3 1s ease-in-out forwards 7s;
+          animation: bottom3 1s ease-in-out forwards 7s;
+}
+
+@-webkit-keyframes top {
+  100% {
+    transform: translateY(-120%);
+  }
+}
+
+@keyframes top {
+  100% {
+    transform: translateY(-120%);
+  }
+}
+@-webkit-keyframes bottom1 {
+  100% {
+    transform: translateY(225%);
+  }
+}
+@keyframes bottom1 {
+  100% {
+    transform: translateY(225%);
+  }
+}
+@-webkit-keyframes top-left {
+  100% {
+    transform: translateX(-470%) translateY(-350%);
+  }
+}
+@keyframes top-left {
+  100% {
+    transform: translateX(-470%) translateY(-350%);
+  }
+}
+@-webkit-keyframes bottom2 {
+  100% {
+    transform: translateY(120%);
+  }
+}
+@keyframes bottom2 {
+  100% {
+    transform: translateY(120%);
+  }
+}
+@-webkit-keyframes top-right {
+  0% {
+    transform: translateX(0%) translateY(0%);
+  }
+  100% {
+    transform: translateX(310%) translateY(-240%);
+  }
+}
+@keyframes top-right {
+  0% {
+    transform: translateX(0%) translateY(0%);
+  }
+  100% {
+    transform: translateX(310%) translateY(-240%);
+  }
+}
+@-webkit-keyframes bottom3 {
+  100% {
+    transform: translateY(220%);
+  }
+}
+@keyframes bottom3 {
+  100% {
+    transform: translateY(220%);
+  }
+}
+/*queen moves again for checkmate*//*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,73 @@
+.pawn{
+    animation: top 1s ease-in-out forwards 2s;
+}
+
+.pawnb1{
+    animation: bottom1 1s ease-in-out forwards 3s ;
+}
+
+.bishop{
+    animation: top-left 1s ease-in-out forwards 4s;
+    
+}
+
+.pawnb2{
+    animation: bottom2 1s ease-in-out forwards 5s;
+}
+
+.queen{
+    animation: top-right 1s ease-in-out forwards 6s;
+}
+
+.pawnb3{
+    animation: bottom3 1s ease-in-out forwards 7s;
+}
+
+
+//keyframes
+
+@keyframes top{
+    100%{
+        transform: translateY(-120%);
+    }
+}
+
+@keyframes bottom1{
+    100%{
+        transform: translateY(225%)
+    }
+}
+
+@keyframes top-left{
+    100%{
+        transform: translateX(-470%) translateY(-350%)
+    }
+}
+
+@keyframes bottom2{
+    100%{
+        transform: translateY(120%)
+    }
+}
+
+@keyframes top-right{
+    0%{
+        transform: translateX(0%) translateY(0%);
+    }
+
+    100%{
+        transform:translateX(310%) translateY(-240%)
+    }
+}
+
+@keyframes bottom3{
+    100%{
+        transform: translateY(220%)
+    }
+}
+/*queen moves again for checkmate*/
+
+
+
+
+
