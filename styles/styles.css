@@ -24,10 +24,10 @@ body {
   justify-content: center;
   margin-top: 0;
   width: 100%;
-  background-image: url(/assets/wood3.jpg);
+  background-image: url(../assets/wood3.jpg);
   border: 10px solid;
-  -o-border-image: url(/assets/wood3.jpg);
-     border-image: url(/assets/wood3.jpg);
+  -o-border-image: url(../assets/wood3.jpg);
+     border-image: url(../assets/wood3.jpg);
 }
 .board .box:nth-child(n+17) {
   color: white;
